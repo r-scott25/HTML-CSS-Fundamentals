@@ -82,3 +82,37 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
 }
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+/* pseudo class */
+li:first-child {
+  font-weight: bold;
+}
+
+/* pseudo class */
+li:last-child {
+  font-style: italic;
+}
+
+/* pseudo class -- 2nd list item */
+li:nth-child(2) {
+  color: red;
+}
+
+/* pseudo class -- odd list items */
+li:nth-child(odd) {
+  text-transform: uppercase;
+}
+
+/* The below styling does NOT work because the p element is NOT the first child element of the article. */
+/* article p:first-child {
+  color: red;
+} */
+
+/* The below styling DOES work because the p element IS the last child element of the article */
+article p:last-child {
+  color: red;
+}
