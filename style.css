@@ -145,3 +145,41 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+/* The below a selector has no effect on the links because it is an element selector. 
+Pseudo-class selectors have a higher priority than elements. So, the above pseudo-class attributes remain in effect. */
+a {
+  color: red;
+}
+
+/********* Resolving Selector Conflicts *********/
+
+/***** Selector Priority From Highest to Lowest *****/
+/* 
+5. Declarations marked !important
+4. Inline Style (style attribute in HTML)
+3. ID (#) selector
+2. Class (.) or pseudo-class (:) selector
+1. Element selector (p, div, li, etc.)
+0. Universal selector (*) 
+
+When there are multiple selectors with the same hierarchy, it is the last one that applies - 
+So for below the .text color attribute overwrites the .copyright color attribute b/c, in the CSS file, it is listed after .copyright.
+
+*/
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
