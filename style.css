@@ -113,6 +113,35 @@ li:nth-child(odd) {
 } */
 
 /* The below styling DOES work because the p element IS the last child element of the article */
-article p:last-child {
+/* article p:last-child {
   color: red;
+} */
+
+/****** Styling Links *****/
+
+/* Link pseudo classes always have to be defined in this order: link, visited, hover, active (LVHA) */
+
+/* pseudo-class - a href */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* pseudo-class for a link that has been visited */
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+/* pseudo-class for a link that is being hovered over */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* pseudo class for when you are clicking a link - the act of pseudo class is edit */
+a:active {
+  background-color: black;
+  font-style: italic;
 }
