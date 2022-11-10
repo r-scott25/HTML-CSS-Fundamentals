@@ -23,6 +23,7 @@ body {
   margin-bottom: 60px;
   /* Below, the first number is supposed to be the padding on the top and bottom, the second is the padding on the left and right */
   /* padding: 20px, 40px; */
+  height: 80px;
 }
 
 nav {
@@ -37,6 +38,11 @@ article {
   margin-bottom: 40px;
 }
 
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
@@ -44,6 +50,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
+  width: 500px;
 }
 
 /* list selector */
